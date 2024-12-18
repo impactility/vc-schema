@@ -1,0 +1,169 @@
+{
+    "$metadata": {
+        "uris": {
+            "jsonLdContext": "https://raw.githubusercontent.com/impactility/vc-schema/main/Battery%20Specifications/Battery%20Specifications.jsonld"
+        },
+        "version": "0.1",
+        "type": "BatterySpecification"
+    },
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "description": "Circonomics Demo - Battery Specifications VC",
+    "title": "Battery Specifications",
+    "properties": {
+        "credentialSubject": {
+            "description": "Stores the data of the credential",
+            "title": "Credential subject",
+            "properties": {
+                "id": {
+                    "description": "Stores the DID of the subject that owns the credential",
+                    "title": "Credential subject ID",
+                    "format": "uri",
+                    "type": "string"
+                },
+                "brand": {
+                    "description": "Brand",
+                    "title": "Brand",
+                    "type": "string"
+                },
+                "cell-chemistry": {
+                    "description": "Cell Chemistry",
+                    "title": "Cell Chemistry",
+                    "type": "string"
+                },
+                "model-number": {
+                    "description": "Model Number",
+                    "title": "Model Number",
+                    "type": "string"
+                },
+                "cell-geometry": {
+                    "description": "Cell Geometry",
+                    "title": "Cell Geometry",
+                    "type": "string"
+                },
+                "nominal-voltage": {
+                    "description": "Nominal Voltage in Volt (V)",
+                    "title": "Nominal Voltage",
+                    "type": "number"
+                },
+                "nominal-capacity": {
+                    "description": "Nominal Capacity in ampere-hour (Ah)",
+                    "title": "Nominal Capacity",
+                    "type": "number"
+                },
+                "nominal-energy": {
+                    "description": "Nominal Energy in Kilowatt-hour (kWh)",
+                    "title": "Nominal Energy",
+                    "type": "number"
+                },
+                "discharge-current": {
+                    "description": "Discharge Current in Ampere (A)",
+                    "title": "Discharge Current",
+                    "type": "number"
+                },
+                "external-dimensions": {
+                    "description": "External Dimensions in Array string format - \"['l in mm','w in mm','d in mm']\"",
+                    "title": "External Dimensions",
+                    "type": "string"
+                },
+                "weight": {
+                    "description": "Weight in Kilogram (kg)",
+                    "title": "Weight",
+                    "type": "number"
+                }
+            },
+            "required": [],
+            "type": "object"
+        },
+        "@context": {
+            "type": [
+                "string",
+                "array",
+                "object"
+            ]
+        },
+        "expirationDate": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "id": {
+            "type": "string"
+        },
+        "issuanceDate": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "issuer": {
+            "type": [
+                "string",
+                "object"
+            ],
+            "format": "uri",
+            "properties": {
+                "id": {
+                    "format": "uri",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ]
+        },
+        "type": {
+            "type": [
+                "string",
+                "array"
+            ],
+            "items": {
+                "type": "string"
+            }
+        },
+        "credentialSchema": {
+            "properties": {
+                "id": {
+                    "format": "uri",
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "type"
+            ],
+            "type": "object"
+        },
+        "credentialStatus": {
+            "description": "Allows the discovery of information about the current status of the credential, such as whether it is suspended or revoked.",
+            "title": "Credential Status",
+            "properties": {
+                "id": {
+                    "description": "Id URL of the credentialStatus.",
+                    "title": "Id",
+                    "format": "uri",
+                    "type": "string"
+                },
+                "type": {
+                    "description": "Expresses the credential status type (method). The value should provide enough information to determine the current status of the credential.",
+                    "title": "Type",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "type"
+            ],
+            "type": "object"
+        }
+    },
+    "required": [
+        "credentialSubject",
+        "@context",
+        "id",
+        "issuanceDate",
+        "issuer",
+        "type",
+        "credentialSchema"
+    ],
+    "type": "object"
+}

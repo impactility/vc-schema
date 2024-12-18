@@ -1,0 +1,43 @@
+{
+    "@context": [
+        {
+            "@protected": true,
+            "@version": 1.1,
+            "id": "@id",
+            "type": "@type",
+            "CobaltPUser": {
+                "@context": {
+                    "@propagate": true,
+                    "@protected": true,
+                    "polygon-vocab": "urn:uuid:14fec631-aa52-4622-ba39-952ab8f40e6e#",
+                    "xsd": "http://www.w3.org/2001/XMLSchema#",
+                    "email": {
+                        "@id": "polygon-vocab:email",
+                        "@type": "xsd:string"
+                    },
+                    "role": {
+                        "@id": "polygon-vocab:role",
+                        "@type": "xsd:string"
+                    },
+                    "first-name": {
+                        "@id": "polygon-vocab:first-name",
+                        "@type": "xsd:string"
+                    },
+                    "last-name": {
+                        "@id": "polygon-vocab:last-name",
+                        "@type": "xsd:string"
+                    },
+                    "mobile-number": {
+                        "@id": "polygon-vocab:mobile-number",
+                        "@type": "xsd:string"
+                    },
+                    "job-title": {
+                        "@id": "polygon-vocab:job-title",
+                        "@type": "xsd:string"
+                    }
+                },
+                "@id": "urn:uuid:80ba8be0-240d-4903-a0f8-5731ca3188a5"
+            }
+        }
+    ]
+}

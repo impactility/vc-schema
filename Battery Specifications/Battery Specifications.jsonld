@@ -1,0 +1,59 @@
+{
+    "@context": [
+        {
+            "@protected": true,
+            "@version": 0.1,
+            "id": "@id",
+            "type": "@type",
+            "BatterySpecification": {
+                "@context": {
+                    "@propagate": true,
+                    "@protected": true,
+                    "polygon-vocab": "urn:uuid:9516a26e-0576-4692-bda7-d512c205c4ac#",
+                    "xsd": "http://www.w3.org/2001/XMLSchema#",
+                    "brand": {
+                        "@id": "polygon-vocab:brand",
+                        "@type": "xsd:string"
+                    },
+                    "cell-chemistry": {
+                        "@id": "polygon-vocab:cell-chemistry",
+                        "@type": "xsd:string"
+                    },
+                    "model-number": {
+                        "@id": "polygon-vocab:model-number",
+                        "@type": "xsd:string"
+                    },
+                    "cell-geometry": {
+                        "@id": "polygon-vocab:cell-geometry",
+                        "@type": "xsd:string"
+                    },
+                    "nominal-voltage": {
+                        "@id": "polygon-vocab:nominal-voltage",
+                        "@type": "xsd:double"
+                    },
+                    "nominal-capacity": {
+                        "@id": "polygon-vocab:nominal-capacity",
+                        "@type": "xsd:double"
+                    },
+                    "nominal-energy": {
+                        "@id": "polygon-vocab:nominal-energy",
+                        "@type": "xsd:double"
+                    },
+                    "discharge-current": {
+                        "@id": "polygon-vocab:discharge-current",
+                        "@type": "xsd:double"
+                    },
+                    "external-dimensions": {
+                        "@id": "polygon-vocab:external-dimensions\t",
+                        "@type": "xsd:string"
+                    },
+                    "weight": {
+                        "@id": "polygon-vocab:weight",
+                        "@type": "xsd:double"
+                    }
+                },
+                "@id": "urn:uuid:8812747b-de76-4639-ae32-2605f3ff20b2"
+            }
+        }
+    ]
+}
