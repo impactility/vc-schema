@@ -1,7 +1,7 @@
 {
   "$metadata": {
     "uris": {
-      "jsonLdContext": "https://example.com/path/to/file/context.jsonld"
+      "jsonLdContext": "https://raw.githubusercontent.com/impactility/vc-schema/main/IdentifiersAndProductData/IdentifiersAndProductData.jsonld"
     },
     "version": "0.1",
     "type": "IdentifiersAndProductData"
