@@ -1,0 +1,43 @@
+{
+    "@context": [
+        {
+            "@protected": true,
+            "@version": 1.1,
+            "id": "@id",
+            "type": "@type",
+            "SymbolsLabelsDocumentation": {
+                "@context": {
+                    "@propagate": true,
+                    "@protected": true,
+                    "polygon-vocab": "urn:uuid:3d44409c-8972-439c-8f6e-e730b413f159#",
+                    "xsd": "http://www.w3.org/2001/XMLSchema#",
+                    "separateCollectionSymbol": {
+                        "@id": "polygon-vocab:separateCollectionSymbol",
+                        "@type": "xsd:string"
+                    },
+                    "symbolsForCadmiumAndLead": {
+                        "@id": "polygon-vocab:symbolsForCadmiumAndLead",
+                        "@type": "xsd:string"
+                    },
+                    "extinguishingAgent": {
+                        "@id": "polygon-vocab:extinguishingAgent",
+                        "@type": "xsd:string"
+                    },
+                    "meaningOfLabelsAndSymbols": {
+                        "@id": "polygon-vocab:meaningOfLabelsAndSymbols",
+                        "@type": "xsd:string"
+                    },
+                    "euDeclarationOfConformity": {
+                        "@id": "polygon-vocab:euDeclarationOfConformity",
+                        "@type": "xsd:string"
+                    },
+                    "resultsOfTestReportsProvingCompliance": {
+                        "@id": "polygon-vocab:resultsOfTestReportsProvingCompliance",
+                        "@type": "xsd:string"
+                    }
+                },
+                "@id": "urn:uuid:13ddd46a-4537-4877-a652-f553bff3c922"
+            }
+        }
+    ]
+}
