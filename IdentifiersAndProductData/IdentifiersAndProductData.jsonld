@@ -45,7 +45,7 @@
           },
           "batteryMass": {
             "@id": "polygon-vocab:batteryMass",
-            "@type": "xsd:string"
+            "@type": "xsd:double"
           },
           "batteryStatus": {
             "@id": "polygon-vocab:batteryStatus",

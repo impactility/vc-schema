@@ -141,7 +141,7 @@
           "description": "Battery Category"
         },
         "batteryMass": {
-          "type": "string",
+          "type": "number",
           "title": "Battery Mass",
           "description": "Battery Mass"
         },
